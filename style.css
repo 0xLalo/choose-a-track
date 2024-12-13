@@ -1,0 +1,80 @@
+main{ flex: 1; }  /* هذا السطر يجعل العنصر <main> يأخذ أكبر مساحة ممكنة داخل الحاوية الأم  */
+
+/* اجعل الصفحة تأخذ 100% من ارتفاع الشاشة */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden;  /* منع التمرير الأفقي */
+}
+
+header {
+    background-color: #f0f8ff;
+    padding: 20px;
+}
+
+header h1 {
+    color: #333;
+}
+
+header p {
+    color: #555;
+    font-size: 18px;
+}
+
+/* تنسيقات المسارات */
+.tracks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  /* signe */
+    margin-top: 20px;
+}
+
+.track {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 200px;
+    transition: transform 0.2s;  /* signe */
+}
+
+.link {
+    text-decoration: none;
+}
+
+.track:hover {
+    transform: scale(1.05);  /* signe */
+}
+
+.track img, .track i {  /* signe */
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.track h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    color: black;
+    font-size: small;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;  /* هذه الخاصية تجعل الفوتر دائمًا في أسفل الصفحة */
+}
